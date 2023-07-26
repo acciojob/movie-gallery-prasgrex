@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Image Gallery</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 <body>
-	<div class="row">
-		
-	<div>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=100; alt="img"/>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=100; alt="img"/>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=100; alt="img"/>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=100; alt="img"/>       	
-	</div>
+  <div class="container-fluid">
+    <!-- First Row: 12 columns for small screens, 6 for medium, 4 for large and extra-large screens -->
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <img src="path_to_image1.jpg" alt="Movie 1">
+      </div>
+      <!-- Add 11 more divs like this for the first row -->
+      <!-- ... -->
+    </div>
 
-	<div>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=200; alt="img"/>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=220; alt="img"/>       	
-	</div>	
+    <!-- Second Row: 6 columns for small screens, 3 for medium, 2 for large and extra-large screens -->
+    <div class="row">
+      <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2">
+        <img src="path_to_image2.jpg" alt="Movie 2">
+      </div>
+      <!-- Add 5 more divs like this for the second row -->
+      <!-- ... -->
+    </div>
 
-	<div>
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=445; alt="img"/>       	
-	</div>	
+    <!-- Third Row: 3 columns for small screens, 2 for medium, 1 for large and extra-large screens -->
+    <div class="row">
+      <div class="col-sm-3 col-md-2 col-lg-1 col-xl-1">
+        <img src="path_to_image3.jpg" alt="Movie 3">
+      </div>
+      <!-- Add 2 more divs like this for the third row -->
+      <!-- ... -->
+    </div>
 
-	<div id="mark">
-		<img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/ff4bf149638448439eebb6e5d4d3e6a9.png" width=445; alt="img"/>
-	</div>
-	</div>	
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Fourth Row: 1 column for all screen sizes -->
+    <div class="row">
+      <div class="col-12">
+        <img src="path_to_image4.jpg" alt="Movie 4">
+      </div>
+    </div>
+  </div>
 
+  <!-- Add Bootstrap JS and jQuery scripts at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
